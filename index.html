@@ -20,14 +20,34 @@
     </header>
 
     <section id="home">
-        <div class="video-container">
-            <video autoplay muted loop id="background-video">
-                <source src="video.mp4" type="video/mp4">
-                Votre navigateur ne prend pas en charge la vidéo HTML5.
-            </video>
+        <div class="intro">
+            <p>Bienvenue sur le site du groupe Elastic Waves LAUM. Découvrez nos dernières actualités et projets.</p>
         </div>
-        <div class="photo-container">
-            <img src="softmatter.jpg" alt="Photo de groupe" class="responsive-photo">
+        <div class="news-container">
+            <div class="news-item">
+                <div class="news-media">
+                    <video autoplay muted loop class="news-video">
+                        <source src="video1.mp4" type="video/mp4">
+                        Votre navigateur ne prend pas en charge la vidéo HTML5.
+                    </video>
+                </div>
+                <div class="news-content">
+                    <p class="news-date">15 Septembre 2024</p>
+                    <p class="news-description">Nous avons récemment publié une nouvelle recherche sur les ondes élastiques.</p>
+                    <a href="https://example.com" target="_blank" class="news-link">Lire plus</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-media">
+                    <img src="softmatter.jpg" alt="Photo d'actualité" class="news-photo">
+                </div>
+                <div class="news-content">
+                    <p class="news-date">01 Septembre 2024</p>
+                    <p class="news-description">Notre équipe a participé à une conférence internationale.</p>
+                    <a href="https://example.com" target="_blank" class="news-link">Lire plus</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -49,6 +69,14 @@
     <section id="opportunities">
         <h2>Opportunities</h2>
         <p>Opportunités et offres d'emploi.</p>
+    </section>
+
+    <section id="logos">
+        <div class="logo-container">
+            <img src="cnrs-logo.png" alt="Logo CNRS" class="logo">
+            <img src="laboratory-logo.png" alt="Logo du laboratoire" class="logo">
+            <img src="iags-logo.png" alt="Logo IAGS" class="logo">
+        </div>
     </section>
 
     <footer>
