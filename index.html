@@ -8,59 +8,62 @@
 </head>
 <body>
     <header>
-        <h1>Elastic Waves LAUM</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#members">Group Members</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#opportunities">Opportunities</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <div class="logo">
+                <h1>ewcm</h1>
+                <p>Elastic Waves in Complex Media</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#members">Group Members</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#opportunities">Opportunities</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section id="home">
-        <div class="banner">
-            <img src="banner.jpg" alt="Bannière" class="banner-img">
-        </div>
         <div class="intro">
+            <img src="banner.jpg" alt="Bannière d'introduction" class="intro-banner">
+            <h2 class="welcome-text">Welcome!</h2>
             <p>
-                Welcome! We are a research group exploring the propagation of elastic waves in a wide range of unconventional materials, including soft structures, granular media, topological lattices, and nonlinear metamaterials. Our work focuses on model systems to observe striking nonlinear wave phenomena, such as bifurcations, soliton propagation, rogue waves, and domino-like transition waves. Conversely, we design functional structures aimed at controlling elastic wave propagation for applications such as wave filtering, mitigation, guiding, or energy harvesting.
+                We are a research group exploring the propagation of elastic waves in a wide range of unconventional materials, including soft structures, granular media, topological lattices, and nonlinear metamaterials. Our work focuses on model systems to observe striking nonlinear wave phenomena, such as bifurcations, soliton propagation, rogue waves, and domino-like transition waves. Conversely, we design functional structures aimed at controlling elastic wave propagation for applications such as wave filtering, mitigation, guiding, or energy harvesting.
             </p>
         </div>
         <div class="news-container">
-            <button class="scroll-btn prev">&#9664;</button>
-            <div class="news-items">
-                <div class="news-item">
-                    <div class="news-media">
-                        <video autoplay muted loop class="news-video">
-                            <source src="video1.mp4" type="video/mp4">
-                            Votre navigateur ne prend pas en charge la vidéo HTML5.
-                        </video>
-                    </div>
-                    <div class="news-content">
-                        <p class="news-date">15 Septembre 2024</p>
-                        <p class="news-description">Nous avons récemment publié une nouvelle recherche sur les ondes élastiques.</p>
-                        <a href="https://example.com" target="_blank" class="news-link">Lire plus</a>
-                    </div>
+            <!-- News items go here -->
+            <div class="news-item">
+                <p class="news-date">15 Septembre 2024</p>
+                <div class="news-media">
+                    <video autoplay muted loop class="news-video">
+                        <source src="video1.mp4" type="video/mp4">
+                        Votre navigateur ne prend pas en charge la vidéo HTML5.
+                    </video>
                 </div>
-
-                <div class="news-item">
-                    <div class="news-media">
-                        <img src="softmatter.jpg" alt="Photo d'actualité" class="news-photo">
-                    </div>
-                    <div class="news-content">
-                        <p class="news-date">01 Septembre 2024</p>
-                        <p class="news-description">Notre équipe a participé à une conférence internationale.</p>
-                        <a href="https://example.com" target="_blank" class="news-link">Lire plus</a>
-                    </div>
+                <div class="news-content">
+                    <p class="news-description">Nous avons récemment publié une nouvelle recherche sur les ondes élastiques.</p>
+                    <a href="https://example.com" target="_blank" class="news-link">Lire plus</a>
                 </div>
             </div>
-            <button class="scroll-btn next">&#9654;</button>
+
+            <div class="news-item">
+                <p class="news-date">01 Septembre 2024</p>
+                <div class="news-media">
+                    <img src="softmatter.jpg" alt="Photo d'actualité" class="news-photo">
+                </div>
+                <div class="news-content">
+                    <p class="news-description">Notre équipe a participé à une conférence internationale.</p>
+                    <a href="https://example.com" target="_blank" class="news-link">Lire plus</a>
+                </div>
+            </div>
+            <!-- Add a right arrow button for scrolling -->
+            <button class="scroll-button">→</button>
         </div>
     </section>
 
+    <!-- Sections -->
     <section id="research">
         <h2>Research</h2>
         <p>Informations sur les recherches de votre groupe.</p>
@@ -92,7 +95,5 @@
     <footer>
         <p>&copy; 2024 Elastic Waves LAUM</p>
     </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
