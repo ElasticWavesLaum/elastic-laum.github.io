@@ -1,14 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const prevBtn = document.querySelector('.scroll-btn.prev');
-    const nextBtn = document.querySelector('.scroll-btn.next');
-    const newsItems = document.querySelector('.news-items');
+    const prevButton = document.querySelector('.carousel-control.prev');
+    const nextButton = document.querySelector('.carousel-control.next');
+    const carousel = document.querySelector('.news-carousel');
+    const itemWidth = document.querySelector('.news-item').offsetWidth;
 
-    prevBtn.addEventListener('click', () => {
-        newsItems.scrollBy({ left: -200, behavior: 'smooth' });
+    let scrollAmount = 0;
+
+    prevButton.addEventListener('click', () => {
+        scrollAmount -= itemWidth;
+        if (scrollAmount < 0) {
+            scrollAmount = 0;
+        }
+        carousel.scrollLeft = scrollAmount;
     });
 
-    nextBtn.addEventListener('click', () => {
-        newsItems.scrollBy({ left: 200, behavior: 'smooth' });
+    nextButton.addEventListener('click', () => {
+        scrollAmount += itemWidth;
+        if (scrollAmount > carousel.scrollWidth - carousel.clientWidth) {
+            scrollAmount = carousel.scrollWidth - carousel.clientWidth;
+        }
+        carousel.scrollLeft = scrollAmount;
     });
 });
-
