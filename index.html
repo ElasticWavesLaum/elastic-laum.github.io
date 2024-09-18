@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elastic Waves LAUM</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Elastic Waves LAUM</h1>
         <nav>
             <ul>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#research">Research</a></li>
                 <li><a href="#members">Group Members</a></li>
                 <li><a href="#publications">Publications</a></li>
@@ -21,34 +21,43 @@
     </header>
 
     <section id="home">
+        <div class="banner">
+            <img src="banner.jpg" alt="Bannière" class="banner-img">
+        </div>
         <div class="intro">
-            <p>Welcome! We are a research group exploring the propagation of elastic waves in a wide range of unconventional materials, including soft structures, granular media, topological lattices, and nonlinear metamaterials. Our work focuses on model systems to observe striking nonlinear wave phenomena, such as bifurcations, soliton propagation, rogue waves, and domino-like transition waves. Conversely, we design functional structures aimed at controlling elastic wave propagation for applications such as wave filtering, mitigation, guiding, or energy harvesting. Here are our latest news:</p>
+            <p>
+                Welcome! We are a research group exploring the propagation of elastic waves in a wide range of unconventional materials, including soft structures, granular media, topological lattices, and nonlinear metamaterials. Our work focuses on model systems to observe striking nonlinear wave phenomena, such as bifurcations, soliton propagation, rogue waves, and domino-like transition waves. Conversely, we design functional structures aimed at controlling elastic wave propagation for applications such as wave filtering, mitigation, guiding, or energy harvesting.
+            </p>
         </div>
         <div class="news-container">
-            <div class="news-item">
-                <div class="news-media">
-                    <video autoplay muted loop class="news-video">
-                        <source src="video1.mp4" type="video/mp4">
-                        Votre navigateur ne prend pas en charge la vidéo HTML5.
-                    </video>
+            <button class="scroll-btn prev">&#9664;</button>
+            <div class="news-items">
+                <div class="news-item">
+                    <div class="news-media">
+                        <video autoplay muted loop class="news-video">
+                            <source src="video1.mp4" type="video/mp4">
+                            Votre navigateur ne prend pas en charge la vidéo HTML5.
+                        </video>
+                    </div>
+                    <div class="news-content">
+                        <p class="news-date">15 Septembre 2024</p>
+                        <p class="news-description">Nous avons récemment publié une nouvelle recherche sur les ondes élastiques.</p>
+                        <a href="https://example.com" target="_blank" class="news-link">Lire plus</a>
+                    </div>
                 </div>
-                <div class="news-content">
-                    <p class="news-date">15 Septembre 2024</p>
-                    <p class="news-description">Nous avons récemment publié une nouvelle recherche sur les ondes élastiques.</p>
-                    <a href="https://example.com" target="_blank" class="news-link">Lire plus</a>
-                </div>
-            </div>
 
-            <div class="news-item">
-                <div class="news-media">
-                    <img src="softmatter.jpg" alt="Photo d'actualité" class="news-photo">
-                </div>
-                <div class="news-content">
-                    <p class="news-date">01 Septembre 2024</p>
-                    <p class="news-description">Notre équipe a participé à une conférence internationale.</p>
-                    <a href="https://example.com" target="_blank" class="news-link">Lire plus</a>
+                <div class="news-item">
+                    <div class="news-media">
+                        <img src="softmatter.jpg" alt="Photo d'actualité" class="news-photo">
+                    </div>
+                    <div class="news-content">
+                        <p class="news-date">01 Septembre 2024</p>
+                        <p class="news-description">Notre équipe a participé à une conférence internationale.</p>
+                        <a href="https://example.com" target="_blank" class="news-link">Lire plus</a>
+                    </div>
                 </div>
             </div>
+            <button class="scroll-btn next">&#9654;</button>
         </div>
     </section>
 
@@ -83,5 +92,7 @@
     <footer>
         <p>&copy; 2024 Elastic Waves LAUM</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
