@@ -1,4 +1,4 @@
-/* Style général */
+/* Styles généraux */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -24,10 +24,10 @@ nav ul li {
     margin-right: 20px;
 }
 
-/* Style de base pour les liens du menu */
+/* Style pour les liens du menu */
 nav ul li a {
     text-decoration: none;
-    color: #fff; /* Couleur du texte du menu */
+    color: #fff;
     transition: color 0.3s ease, border-bottom 0.3s ease;
     padding-bottom: 2px;
     border-bottom: 2px solid transparent;
@@ -56,7 +56,7 @@ footer {
 
 footer .footer-logo {
     margin-right: 10px;
-    height: 40px; /* Ajuster la hauteur des logos */
+    height: 40px; /* Ajustement de la taille des logos */
     vertical-align: middle;
 }
 
@@ -76,7 +76,7 @@ h1, h2 {
     background-color: #fff;
     padding: 10px;
     margin-bottom: 20px;
-    width: 30%; /* Réduction de la largeur des encadrés */
+    width: 30%;
     display: inline-block;
     vertical-align: top;
 }
@@ -89,7 +89,7 @@ h1, h2 {
     top: -10px; /* Remonter la date */
 }
 
-/* Animation et marges pour Welcome et Here are some */
+/* Style Welcome et Here are some */
 #welcome {
     font-size: 1.5em;
     margin-bottom: 20px;
@@ -106,8 +106,8 @@ address {
     margin-top: 20px;
 }
 
-/* Marges et alignement pour le texte principal */
+/* Marges et alignement du texte principal */
 .main-text {
-    margin: 40px 4cm; /* 4 cm de marge à gauche et à droite */
+    margin: 40px 4cm;
     text-align: justify;
 }
