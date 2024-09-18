@@ -8,33 +8,29 @@
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <div class="logo-text">
-                <h1 class="acronym">ewcm</h1>
-                <p class="full-name">elastic waves in complex media</p>
+        <h1>Welcome</h1>
+        <div class="title-banner">
+            <div class="title-left">
+                <div class="acronym">ewcm</div>
+                <div class="full-title">elastic waves in complex media</div>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#research">Research</a></li>
-                    <li><a href="#members">Group Members</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#opportunities">Opportunities</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="research.html">research</a></li>
+                    <li><a href="members.html">group members</a></li>
+                    <li><a href="publications.html">publications</a></li>
+                    <li><a href="opportunities.html">opportunities</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <section id="home">
-        <div class="banner">
-            <img src="banner-image.jpg" alt="Banner Image">
-        </div>
         <div class="intro">
-            <h2>Welcome!</h2>
-            <p>We are a research group exploring the propagation of elastic waves in a wide range of unconventional materials, including soft structures, granular media, topological lattices, and nonlinear metamaterials. Our work focuses on model systems to observe striking nonlinear wave phenomena, such as bifurcations, soliton propagation, rogue waves, and domino-like transition waves. Conversely, we design functional structures aimed at controlling elastic wave propagation for applications such as wave filtering, mitigation, guiding, or energy harvesting.</p>
             <p>Here are our latest actualities:</p>
         </div>
-        <div class="news-carousel">
-            <!-- Add carousel functionality here -->
+        <div class="news-container">
             <div class="news-item">
                 <div class="news-media">
                     <video autoplay muted loop class="news-video">
@@ -48,6 +44,7 @@
                     <a href="https://example.com" target="_blank" class="news-link">Lire plus</a>
                 </div>
             </div>
+
             <div class="news-item">
                 <div class="news-media">
                     <img src="softmatter.jpg" alt="Photo d'actualité" class="news-photo">
@@ -58,8 +55,9 @@
                     <a href="https://example.com" target="_blank" class="news-link">Lire plus</a>
                 </div>
             </div>
-            <!-- Add arrow for scrolling functionality here -->
         </div>
+        <button class="carousel-button" onclick="scrollCarousel(-1)">&#10094;</button>
+        <button class="carousel-button" onclick="scrollCarousel(1)">&#10095;</button>
     </section>
 
     <section id="logos">
@@ -73,5 +71,16 @@
     <footer>
         <p>&copy; 2024 Elastic Waves LAUM</p>
     </footer>
+
+    <script>
+        function scrollCarousel(direction) {
+            const container = document.querySelector('.news-container');
+            const itemWidth = document.querySelector('.news-item').offsetWidth;
+            const containerWidth = container.offsetWidth;
+            const maxScrollLeft = container.scrollWidth - containerWidth;
+            const newScrollLeft = Math.min(Math.max(container.scrollLeft + direction * itemWidth, 0), maxScrollLeft);
+            container.scrollTo({ left: newScrollLeft, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
