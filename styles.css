@@ -35,7 +35,7 @@ header {
     margin: 0;
     font-weight: normal;
     text-align: left;
-    line-height: 1.2; /* Reduced line height */
+    line-height: 1.1; /* Further reduced line height */
 }
 
 nav ul {
@@ -62,7 +62,7 @@ nav ul li a:hover {
 /* Home Section */
 #home {
     padding: 2rem;
-    text-align: center;
+    text-align: left; /* Align text left */
 }
 
 .intro-banner {
@@ -73,7 +73,7 @@ nav ul li a:hover {
 }
 
 .welcome-text {
-    font-size: 2rem; /* Reduced size */
+    font-size: 1.75rem; /* Reduced size */
     margin-bottom: 0.5rem; /* Adjusted margin */
     text-align: left; /* Align to left */
 }
@@ -84,8 +84,8 @@ nav ul li a:hover {
 }
 
 .news-intro {
-    text-align: center;
     margin: 2rem 0;
+    text-align: left; /* Align to left */
 }
 
 .news-container {
@@ -101,9 +101,9 @@ nav ul li a:hover {
     background-color: #f9f9f9;
     color: #333;
     padding: 1rem;
-    margin: 0 1rem;
+    margin: 0 0.5rem; /* Reduced margin */
     border-radius: 8px;
-    width: 300px;
+    width: 250px; /* Reduced width */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,4 +171,10 @@ footer {
 .logo {
     max-height: 100px;
     width: auto;
+}
+
+/* Address Section */
+#address {
+    padding: 1rem;
+    text-align: center;
 }
