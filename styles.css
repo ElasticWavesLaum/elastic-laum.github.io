@@ -301,3 +301,57 @@ footer {
     font-size: 16px;
     color: #333;
 }
+
+
+/* Font styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Research section styling */
+.research-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.research-block.reverse-layout {
+    flex-direction: row-reverse;
+}
+
+.research-image {
+    width: 30%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    margin: 0 5%;
+}
+
+.research-content {
+    width: 60%;
+}
+
+/* Spacing */
+main {
+    padding: 20px;
+}
+
+footer, header {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
