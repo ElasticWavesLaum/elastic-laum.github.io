@@ -1,40 +1,50 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group Members</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <!-- Inclusion du header commun -->
-        {% include header.html %}
-    </header>
+/* Group Members Page */
+#members {
+    padding: 2rem;
+    text-align: center;
+}
 
-    <main>
-        <section id="group-members">
-            <h2>Our Group Members</h2>
-            <div class="members-grid">
-                <!-- Exemple d'un membre -->
-                <div class="member">
-                    <img src="path-to-photo.jpg" alt="Member Photo">
-                    <h3><a href="member1.html">Dr. Member Name</a></h3>
-                    <p>Researcher / Function</p>
-                </div>
-                <div class="member">
-                    <img src="path-to-photo.jpg" alt="Member Photo">
-                    <h3><a href="member2.html">Dr. Another Name</a></h3>
-                    <p>Postdoc</p>
-                </div>
-                <!-- Ajouter d'autres membres ici -->
-            </div>
-        </section>
-    </main>
+.members-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+}
 
-    <footer>
-        <!-- Inclusion du footer commun -->
-        {% include footer.html %}
-    </footer>
-</body>
-</html>
+.member-card {
+    width: 150px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.member-photo {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.member-card p {
+    margin: 0;
+}
+
+.member-card a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.member-card a:hover {
+    color: #888;
+    text-decoration: underline;
+}
+
+.member-card span {
+    display: block;
+    margin-top: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
+}
