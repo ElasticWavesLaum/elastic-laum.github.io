@@ -252,10 +252,17 @@ footer {
 
 
 .member-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Crée 5 colonnes de largeur égale */
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
+    justify-content: flex-start; /* Aligne les éléments à gauche */
     gap: 1rem; /* Espacement entre les membres */
 }
+
+.member-card {
+    flex: 0 0 calc(20% - 1rem); /* Chaque membre prend 20% de la largeur moins l'espacement */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur */
+}
+
 
 .member-card {
     width: 150px;
