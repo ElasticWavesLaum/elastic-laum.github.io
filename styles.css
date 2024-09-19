@@ -293,6 +293,7 @@ footer {
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
+    margin-left: 4cm; /* Adding left margin for each research item */
 }
 
 .research-image {
@@ -313,4 +314,12 @@ footer {
     margin: 0;
 }
 
+/* Reverse the order for the second research item (image on the right) */
+.research-item-reverse {
+    flex-direction: row-reverse;
+}
 
+.research-item-reverse .research-image {
+    margin-left: 20px;
+    margin-right: 0;
+}
