@@ -1,49 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group Members - Elastic Waves in Complex Media</title>
+    <title>Group Members</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <!-- Inclusion du header commun -->
+        {% include header.html %}
+    </header>
 
-<!-- Header -->
-<header>
-    <nav>
-        <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="research.html">research</a></li>
-            <li><a href="members.html">group members</a></li>
-            <li><a href="publications.html">publications</a></li>
-            <li><a href="opportunities.html">opportunities</a></li>
-        </ul>
-    </nav>
-</header>
+    <main>
+        <section id="group-members">
+            <h2>Our Group Members</h2>
+            <div class="members-grid">
+                <!-- Exemple d'un membre -->
+                <div class="member">
+                    <img src="path-to-photo.jpg" alt="Member Photo">
+                    <h3><a href="member1.html">Dr. Member Name</a></h3>
+                    <p>Researcher / Function</p>
+                </div>
+                <div class="member">
+                    <img src="path-to-photo.jpg" alt="Member Photo">
+                    <h3><a href="member2.html">Dr. Another Name</a></h3>
+                    <p>Postdoc</p>
+                </div>
+                <!-- Ajouter d'autres membres ici -->
+            </div>
+        </section>
+    </main>
 
-<section class="container">
-    <h1>Group Members</h1>
-
-    <h2>Current Members</h2>
-    <div class="member">
-        <img src="member1.jpg" alt="Photo of Member 1" class="member-photo">
-        <p>Name: Dr. John Doe - Status: Principal Investigator</p>
-    </div>
-
-    <h2>Past Members</h2>
-    <div class="member">
-        <img src="member2.jpg" alt="Photo of Member 2" class="member-photo">
-        <p>Name: Dr. Jane Smith - Status: Former Postdoc</p>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer>
-    <img src="cnrs.png" alt="CNRS Logo" class="footer-logo">
-    <img src="laum.png" alt="Laboratory Logo" class="footer-logo">
-    <img src="iags.png" alt="IAGS Logo" class="footer-logo">
-    <p>&copy; 2024 Elastic Waves in Complex Media. All rights reserved.</p>
-</footer>
-
+    <footer>
+        <!-- Inclusion du footer commun -->
+        {% include footer.html %}
+    </footer>
 </body>
 </html>
