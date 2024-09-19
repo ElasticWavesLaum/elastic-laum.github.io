@@ -242,51 +242,41 @@ footer {
 /* Group Members Page */
 #members {
     padding: 2rem;
-    text-align: center;
+    text-align: center; /* Garde le titre centré */
 }
-
-.current-members-title {
-    text-align: left; /* Aligne le texte à gauche */
-    margin-left: 4rem; /* Optionnel : ajoute une marge à gauche */
-}
-
 
 .members-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Affiche les membres en grille avec une largeur minimale de 150px */
-    gap: 1.5rem; /* Espacement entre les cartes */
-    justify-items: center; /* Centre les éléments dans chaque cellule */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Augmente la largeur minimale des cartes */
+    gap: 1.5rem;
+    justify-items: center; /* Centre les cartes dans chaque cellule */
     margin: 0 2cm; /* Marges de 2 cm à gauche et à droite */
-    padding: 1rem 0; /* Optionnel : ajout d'un peu de padding en haut et en bas */
 }
 
-
 .member-card {
-    flex: 0 0 calc(20% - 1rem); /* Chaque membre prend 20% de la largeur moins l'espacement */
-    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur */
-}
-
-
-.member-card {
-    width: 150px;
+    width: 200px; /* Largeur augmentée pour plus d'espace */
     background-color: #f9f9f9;
     border-radius: 8px;
     padding: 1rem;
-    text-align: center;
+    text-align: left; /* Aligne le texte à gauche */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .member-photo {
-    width: 150px; /* Largeur fixe */
-    height: 200px; /* Hauteur fixe pour format portrait */
+    width: 100%; /* Ajuste la largeur pour remplir la carte */
+    height: 150px; /* Hauteur fixe */
     object-fit: cover; /* Remplit le cadre tout en maintenant le ratio */
-    object-position: center; /* Centre l'image si elle est recadrée */
     border-radius: 8px; /* Coins arrondis */
     border: 2px solid #ccc; /* Bordure optionnelle */
+    margin-bottom: 0.5rem; /* Espacement sous l'image */
 }
 
 .member-card p {
     margin: 0;
+    margin-bottom: 0.25rem; /* Réduit l'interligne */
 }
 
 .member-card a {
@@ -307,6 +297,16 @@ footer {
     color: #666;
     font-size: 0.9rem;
 }
+
+/* Style pour l'email */
+.email {
+    color: #333;
+    font-size: 0.9rem;
+}
+
+
+
+
 
 .research-item {
     display: flex;
