@@ -245,6 +245,11 @@ footer {
     text-align: center; /* Garde le titre centré */
 }
 
+.current-members-title {
+    text-align: left; /* Aligne le titre à gauche */
+    margin-left: 2rem; /* Ajoute une marge à gauche pour un peu d'espace */
+}
+
 .members-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Réduit la largeur minimale des cartes */
