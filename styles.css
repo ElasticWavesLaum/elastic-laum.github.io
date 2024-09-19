@@ -248,13 +248,13 @@ footer {
 .members-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Augmente la largeur minimale des cartes */
-    gap: 1.5rem;
+    gap: 3rem;
     justify-items: center; /* Centre les cartes dans chaque cellule */
-    margin: 0 2cm; /* Marges de 2 cm à gauche et à droite */
+    margin: 0 3cm; /* Marges de 2 cm à gauche et à droite */
 }
 
 .member-card {
-    width: 200px; /* Largeur augmentée pour plus d'espace */
+    width: 180px; /* Largeur augmentée pour plus d'espace */
     background-color: #f9f9f9;
     border-radius: 8px;
     padding: 1rem;
