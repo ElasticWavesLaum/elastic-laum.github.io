@@ -245,11 +245,16 @@ footer {
     text-align: center;
 }
 
-.members-container {
+.current-members-title {
+    text-align: left; /* Aligne le texte à gauche */
+    margin-left: 4rem; /* Optionnel : ajoute une marge à gauche */
+}
+
+
+.member-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 1.5rem;
-    justify-items: center;
+    grid-template-columns: repeat(5, 1fr); /* Crée 5 colonnes de largeur égale */
+    gap: 1rem; /* Espacement entre les membres */
 }
 
 .member-card {
