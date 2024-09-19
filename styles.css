@@ -49,14 +49,31 @@ nav ul li {
     margin: 0 1rem;
 }
 
+/* Effet de survol (soulignement et changement de couleur) */
 nav ul li a {
     color: #fff;
     text-decoration: none;
     position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: grey;
+    left: 0;
+    bottom: -3px;
+    transition: width 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: grey; /* Changement de couleur en gris au survol */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Soulignement qui apparaît graduellement */
 }
 
 /* Home Section */
