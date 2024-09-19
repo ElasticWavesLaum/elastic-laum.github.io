@@ -146,13 +146,18 @@ nav ul li a:hover::after {
     flex-direction: column;
     align-items: center;
     flex-shrink: 0;
+    position: relative; /* Pour positionner la date absolument */
 }
 
 .news-date {
     font-size: 1rem;
     font-weight: bold;
-    margin: 0.5rem 0; /* Ajustement de la marge pour réduire l'espace en haut */
+    position: absolute; /* Positionne la date indépendamment des autres éléments */
+    top: 0.5rem; /* Positionne la date à 0.5rem du haut de la carte */
+    left: 50%; /* Centre la date horizontalement */
+    transform: translateX(-50%); /* Ajuste pour un centrage parfait */
 }
+
 
 .news-media {
     margin-bottom: 0.5rem;
