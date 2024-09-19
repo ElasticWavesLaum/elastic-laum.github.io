@@ -247,14 +247,14 @@ footer {
 
 .members-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Augmente la largeur minimale des cartes */
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Réduit la largeur minimale des cartes */
+    gap: 2rem; /* Augmente l'espacement entre les cartes */
     justify-items: center; /* Centre les cartes dans chaque cellule */
-    margin: 0 3cm; /* Marges de 2 cm à gauche et à droite */
+    margin: 0 2cm; /* Marges de 2 cm à gauche et à droite */
 }
 
 .member-card {
-    width: 180px; /* Largeur augmentée pour plus d'espace */
+    width: 180px; /* Largeur réduite pour moins d'espace */
     background-color: #f9f9f9;
     border-radius: 8px;
     padding: 1rem;
@@ -262,7 +262,8 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; /* Aligne les éléments à gauche */
+    position: relative; /* Pour le positionnement absolu de la photo */
 }
 
 .member-photo {
@@ -276,7 +277,7 @@ footer {
 
 .member-card p {
     margin: 0;
-    margin-bottom: 0.25rem; /* Réduit l'interligne */
+    margin-bottom: 0.1rem; /* Réduit l'interligne */
 }
 
 .member-card a {
@@ -293,7 +294,7 @@ footer {
 
 .member-card span {
     display: block;
-    margin-top: 0.5rem;
+    margin-top: 0.25rem; /* Réduit l'interligne */
     color: #666;
     font-size: 0.9rem;
 }
