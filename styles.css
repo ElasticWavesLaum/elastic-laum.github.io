@@ -138,7 +138,7 @@ nav ul li a:hover::after {
 .news-item {
     background-color: #f9f9f9;
     color: #333;
-    padding: 1rem;
+    padding: 2rem 1rem 1rem 1rem; /* Augmente le padding en haut pour éviter la superposition */
     margin: 0 0.5rem;
     border-radius: 8px;
     width: 220px;
@@ -150,16 +150,18 @@ nav ul li a:hover::after {
 }
 
 .news-date {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Réduction de la taille de la police */
     font-weight: bold;
     position: absolute; /* Positionne la date indépendamment des autres éléments */
     top: 0.5rem; /* Positionne la date à 0.5rem du haut de la carte */
     left: 50%; /* Centre la date horizontalement */
     transform: translateX(-50%); /* Ajuste pour un centrage parfait */
+    background-color: #f9f9f9; /* Optionnel : fond de couleur pour contraster la date */
+    padding: 0 0.3rem; /* Optionnel : un peu de padding pour le texte */
 }
 
-
 .news-media {
+    margin-top: 1.5rem; /* Ajoute plus d'espace entre la date et le média */
     margin-bottom: 0.5rem;
 }
 
@@ -177,6 +179,8 @@ nav ul li a:hover::after {
     color: #00f;
     text-decoration: none;
 }
+
+
 
 /* Scroll Button */
 .scroll-button {
