@@ -37,7 +37,7 @@ header {
     font-weight: normal;
     text-align: left;
     line-height: 1.1;
-    margin-top: -0.25rem; /* Ajuster l'espace au-dessus du sous-titre */
+    margin-top: -0.75rem; /* Ajuster l'espace au-dessus du sous-titre */
 }
 
 nav ul {
