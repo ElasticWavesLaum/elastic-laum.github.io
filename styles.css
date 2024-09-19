@@ -213,47 +213,53 @@ footer {
     gap: 1rem;
 }
 
-/* Group Members Section */
-#group-members {
+/* Group Members Page */
+#members {
     padding: 2rem;
     text-align: center;
 }
 
-.members-grid {
+.members-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
 }
 
-.member {
-    background-color: #f9f9f9;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.member img {
+.member-card {
     width: 150px;
-    height: 150px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.member-photo {
+    width: 100%;
     border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
-.member h3 a {
-    color: #333;
+.member-card p {
+    margin: 0;
+}
+
+.member-card a {
     text-decoration: none;
-    position: relative;
-}
-
-.member h3 a:hover {
-    text-decoration: underline;
-    color: #666; /* Changement de couleur au survol */
+    color: #333;
+    font-weight: bold;
     transition: all 0.3s ease;
 }
 
-.member p {
-    font-size: 0.9rem;
+.member-card a:hover {
+    color: #888;
+    text-decoration: underline;
+}
+
+.member-card span {
+    display: block;
+    margin-top: 0.5rem;
     color: #666;
+    font-size: 0.9rem;
 }
