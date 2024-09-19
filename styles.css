@@ -273,3 +273,31 @@ footer {
     border-radius: 8px; /* Optional: adds rounded corners */
     border: 2px solid #ccc; /* Optional: adds a border to the photo */
 }
+
+
+
+.research-block {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.research-image {
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.research-content {
+    width: 60%;
+}
+
+.research-content h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.research-content p {
+    font-size: 16px;
+    color: #333;
+}
