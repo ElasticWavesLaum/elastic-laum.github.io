@@ -25,6 +25,21 @@ header {
     margin: 0 auto;
 }
 
+.logo {
+    text-align: left;
+}
+
+.logo a {
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    color: inherit; /* Hériter la couleur du texte du parent */
+}
+
+.logo a:link,
+.logo a:visited {
+    color: #fff; /* Couleur blanche pour les liens non visités et visités */
+}
+
+
 .logo h1 {
     font-size: 2.5rem;
     margin: 0;
