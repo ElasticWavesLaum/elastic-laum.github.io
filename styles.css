@@ -298,7 +298,7 @@ footer {
 }
 
 .research-block.reverse-layout {
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; /* Inverse la disposition des images à gauche */
 }
 
 .research-image {
@@ -323,7 +323,3 @@ footer {
     color: #333;
 }
 
-/* Spacing */
-main {
-    padding: 20px;
-}
